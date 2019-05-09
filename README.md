@@ -75,7 +75,7 @@ $ sudo swapon /swapfile
 ```
 It will cost a long time about 3-4 hours.
 After it , you will very excited to see the result.
-![image]
+![image]https://github.com/zhucheng725/Nvidia-Nano-Install-OpenCv4.0/blob/master/1.png
 and 
 ```
 $sudo make install 
