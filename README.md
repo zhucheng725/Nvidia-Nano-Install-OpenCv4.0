@@ -42,12 +42,17 @@ cmake -D WITH_CUDA=ON -D CUDA_ARCH_BIN="5.3" -D CUDA_ARCH_PTX="" -D OPENCV_EXTRA
 ```
 without -D WITH_IPP=OFF and failed.
 I try to download the https://raw.githubusercontent.com/opencv/opencv_3rdparty/ippicv/master_20170822/ippicv/ippicv_2017u3_lnx_intel64_general_20170822.tgz
-and extrat it to the path: pencv-4.1.0/3rdparty/ippicv.
-Althought I extrat it and put it to the pat, I see some fail list after cmake.
+and extrat it to the path: 
+```
+pencv-4.1.0/3rdparty/ippicv.
+```
+Althought I extrat it and put it to the path, I see some fail list after $cmake.
 Anyways , I put it in the path.
 and 
-```$make -j3 #also you can just $make ```
-Maybe you will see the result:
+```
+$make -j3 #also you can just $make 
+```
+Maybe you will see the result:<br>
 ```
 Killed
 CMake Error at cuda_compile_1_generated_pyrlk.cu.o.RELEASE.cmake:281 (message):
@@ -75,15 +80,18 @@ $ sudo swapon /swapfile
 ```
 It will cost a long time about 3-4 hours.
 After it , you will very excited to see the result.
-![image]https://github.com/zhucheng725/Nvidia-Nano-Install-OpenCv4.0/blob/master/1.png
+![image](https://github.com/zhucheng725/Nvidia-Nano-Install-OpenCv4.0/blob/master/1.png)
 and 
 ```
 $sudo make install 
 $sudo apt-get install -y python-opencv python3-opencv
 ```
-![iamge]
+![iamge](https://github.com/zhucheng725/Nvidia-Nano-Install-OpenCv4.0/blob/master/2.png)<br>
+
 Also you can use .sh to complete this thing as follow:
-```https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh```
+```
+https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh
+```
 
 
 
