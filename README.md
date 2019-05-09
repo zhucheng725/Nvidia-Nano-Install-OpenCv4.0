@@ -1,13 +1,13 @@
 # Nvidia-Nano-Install-OpenCv4.0
 
-STEP1: Download The OpenCV4 Resource
+# STEP1: Download The OpenCV4 Resource
 
 Give the website to download:
 https://opencv.org/releases/   #Opencv4
 and 
 https://codeload.github.com/opencv/opencv_contrib/zip/4.1.0  #Opencv4 extra contrib
 
-STEP2:Install the requirement
+# STEP2:Install the requirement
 
 ```
 $sudo apt-get update
@@ -31,7 +31,7 @@ https://packages.ubuntu.com/zh-cn/xenial/arm64/libjasper-dev/download
 
 I could not install it successfully and I try to cmake without it and successfully.
 
-STEP3:START
+# STEP3:START
 make dir in the opencv4 floder named "release" #mkdir release
 ```cd release/
 cmake -D WITH_CUDA=ON -D CUDA_ARCH_BIN="5.3" -D CUDA_ARCH_PTX="" -D OPENCV_EXTRA_MODULES_PATH=/home/kirito/procedure/opencv4/opencv_contrib-4.1.0/modules -D WITH_GSTREAMER=ON -D WITH_LIBV4L=ON -D BUILD_opencv_python2=ON -D BUILD_opencv_python3=ON -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_EXAMPLES=OFF -D CMAKE_BUILD_TYPE=RELEASE  -D WITH_IPP=OFF  -D CMAKE_INSTALL_PREFIX=/usr/local ..
