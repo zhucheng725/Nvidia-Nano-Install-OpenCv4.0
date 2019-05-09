@@ -41,7 +41,9 @@ Before do that cmake, I try other ways such as :
 cmake -D WITH_CUDA=ON -D CUDA_ARCH_BIN="5.3" -D CUDA_ARCH_PTX="" -D OPENCV_EXTRA_MODULES_PATH=/home/kirito/procedure/opencv4/opencv_contrib-4.1.0/modules -D WITH_GSTREAMER=ON -D WITH_LIBV4L=ON -D BUILD_opencv_python2=ON -D BUILD_opencv_python3=ON -D BUILD_TESTS=OFF -D BUILD_PERF_TESTS=OFF -D BUILD_EXAMPLES=OFF -D CMAKE_BUILD_TYPE=RELEASE  -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
 without -D WITH_IPP=OFF and failed.
-I try to download the https://raw.githubusercontent.com/opencv/opencv_3rdparty/ippicv/master_20170822/ippicv/ippicv_2017u3_lnx_intel64_general_20170822.tgz
+I try to download the <br>
+
+https://raw.githubusercontent.com/opencv/opencv_3rdparty/ippicv/master_20170822/ippicv/ippicv_2017u3_lnx_intel64_general_20170822.tgz<br>
 and extrat it to the path: 
 ```
 pencv-4.1.0/3rdparty/ippicv.
