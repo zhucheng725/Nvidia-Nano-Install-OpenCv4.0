@@ -70,7 +70,8 @@ make[1]: *** Waiting for unfinished jobs....
 Makefile:162: recipe for target 'all' failed
 make: *** [all] Error 2
 ```
-I think maybe the nano do not have enough RAM or very hot during the cmake.
+I think maybe the nano do not have enough RAM or very hot during the cmake.<br>
+https://devtalk.nvidia.com/default/topic/1049296/jetson-nano/how-to-install-opencv-python-for-python3-6/post/5329472/#.<br>
 So you can set some requirements before $make:
 ```
 $ sudo fallocate -l 4.0G /swapfile # this is the difference
