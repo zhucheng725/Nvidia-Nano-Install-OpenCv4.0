@@ -105,6 +105,29 @@ If you meet this error again you can do this command:<br>
 ```
 sudo apt-get install libopencv-dev
 ```
+I would meet some errors such as can not find the opencv.hpp directory.
+Then I would try to write the CMakeLists.txt and build the 'build' file.
+The CMakeLists.txt as follow:
+```
+cmake_minimum_required(VERSION 2.8)
+project(tld)
+
+set(CMAKE_CXX_FLAGS "-std=c++11")
+
+find_package(OpenCV 4.1 REQUIRED)
+
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+add_executable(tld tld.cpp)
+target_link_libraries(tld ${OpenCV_LIBS})
+```
+Then follow this command:<br>
+```
+cd build
+cmake ..
+make
+./tld
+```
 Maybe would help you.
 
 
