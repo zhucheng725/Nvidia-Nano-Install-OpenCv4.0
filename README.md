@@ -98,14 +98,13 @@ Also you can use .sh to complete this thing as follow:
 https://github.com/AastaNV/JEP/blob/master/script/install_opencv4.0.0_Nano.sh
 ```
 
-### STEP4 OTHERS:
+### STEP4:OTHERS
 If meet this error:  fatal error: opencv2/photo.hpp: No such file or directory<br>
 I follow this link:https://blog.csdn.net/keith_bb/article/details/52685231<br>
-If you meet this error again you can do this commadn:<br>
+If you meet this error again you can do this command:<br>
 ```
 sudo apt-get install libopencv-dev
 ```
-<br>
 Maybe would help you.
 
 
