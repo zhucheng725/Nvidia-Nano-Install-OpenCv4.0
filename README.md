@@ -20,16 +20,16 @@ $sudo apt-get install -y curl
 $sudo apt-get update
 ```
 
-But in my nano, I can not install the libjasper-dev even thought I try lots of ways such as:
+But in my nano, you can do this following:
 ```
-sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+sudo add-apt-repository "deb http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial main multiverse restricted universe"
 sudo apt update
 sudo apt install libjasper1 libjasper-dev
 ```
 or download the deb:
 https://packages.ubuntu.com/zh-cn/xenial/arm64/libjasper-dev/download
 
-I could not install it successfully and I try to cmake without it and successfully.
+
 
 ### STEP3:START
 make dir in the opencv-4.1.0 floder named "release" #mkdir release
